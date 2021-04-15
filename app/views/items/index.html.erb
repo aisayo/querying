@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<% @styles.each do |style| %>
+    <%= style.name %> :
+    <% style.items.each do |item| %>
+    <% binding.pry %>
+        <%= item.name %>
+    <% end %>
+    <br>
+<% end %> 
+
+
